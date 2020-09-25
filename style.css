@@ -1,0 +1,59 @@
+body{
+  background-color: #00A6A6;
+height: 100vh;
+}
+.homePageImg{
+  height: 400px;
+  width: 240px;
+}
+.btn{
+  margin-top: 2.5rem;
+  margin-left: 3.5rem;
+  border-radius: 20px;
+  background: #EFCA08;
+  color: black;
+}
+
+.questionBox{
+background-color:#F49F0A;
+position: relative;
+top: .3rem;
+width: 23rem;
+height: 24rem;
+}
+
+.choicesBox{
+  border: black 2px solid;
+position: relative;
+top: 5rem;
+}
+
+.questionImg{
+  height: 12rem;
+  width: 12rem;
+}
+
+.answerBtn{
+  margin-top: 1rem;
+  margin-left: 15rem;
+}
+
+.answerImg{
+  position: relative;
+  height: 15rem;
+  width: 15rem;
+  left: 9rem;
+}
+
+.answerBox{
+  height: 14.2rem;
+  width: 22.5rem;
+background-color:#F49F0A;
+margin-top: .5rem;
+
+}
+
+.againBtn{
+  margin-top: 1rem;
+  margin-left: 16rem;
+}
