@@ -3,31 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <h2>Category:</h2>
-    <h2>Question:</h2>
-    <div class="choices">
-      <p>A</p>
-      <p>some text</p>
-    </div>
-    <div class="choices">
-      <p>B</p>
-      <p>some text</p>
-    </div>
-    <div class="choices">
-      <p>C</p>
-      <p>some text</p>
-    </div>
-    <div class="choices">
-      <p>D</p>
-      <p>some text</p>
-    </div>
+  <img src="media/1.jpeg" class="questionImg" alt="">
+  <div class="questionBox container" id="question-box">
+    <!-- <h4 id="category">Category:</h4>
+    <h4 id="question">Question:<span></span></h4>
+    <div class="choicesBox">
+      <p>A:<span></span></p>
+      <p>B:<span></span></p>
+      <p>C:<span></span></p>
+      <p>D:<span></span></p>
+    </div> -->
   </div>
-  <button><a href="AnswerPage.html">Answer</button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="app.js"></script>
+  <a href="AnswerPage.html" class="btn btn-primary btn-lg answerBtn" role="button" aria-pressed="true">Answer?</a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
