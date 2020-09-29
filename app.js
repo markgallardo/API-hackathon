@@ -42,8 +42,9 @@ function getData(){
     // randomize the answer
     var answers = data.results[0].incorrect_answers;
     var correctAnswer = data.results[0].correct_answer;
-    var randomAnswer = Math.floor(Math.random()*3) + 1;
-    //add the correct answxer
+    var randomAnswer = Math.floor(Math.random()*4) + 1;
+    console.log(randomAnswer)
+    //add the correct answer
     answers.splice(randomAnswer -1, 0 , correctAnswer)
     for( var i = 0; i < answers.length; i++){
       var button = document.createElement("button")
