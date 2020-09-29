@@ -1,31 +1,32 @@
 body{
   background-color: #00A6A6;
-height: 100vh;
+  height: 100vh;
+}
+h1{
+  margin-top: 5rem;
+  text-align: center;
 }
 .homePageImg{
-  height: 400px;
+  position: relative;
+  top: 6rem;
+  height: 300px;
   width: 240px;
 }
 .btn{
-  margin-top: 2.5rem;
-  margin-left: 3.5rem;
+  margin-top: 7rem;
+  margin-left: 8rem;
   border-radius: 20px;
   background: #EFCA08;
   color: black;
 }
 
 .questionBox{
-background-color:#F49F0A;
-position: relative;
-top: .3rem;
-width: 23rem;
-height: 24rem;
-}
-
-.choicesBox{
-  border: black 2px solid;
-position: relative;
-top: 5rem;
+  background-color:#F49F0A;
+  position: relative;
+  top: .3rem;
+  width: 95%;
+  height: 24rem;
+  left: .6rem;
 }
 
 .questionImg{
@@ -48,12 +49,40 @@ top: 5rem;
 .answerBox{
   height: 14.2rem;
   width: 22.5rem;
-background-color:#F49F0A;
-margin-top: .5rem;
+  background-color:#F49F0A;
+  margin-top: .5rem;
 
 }
 
 .againBtn{
   margin-top: 1rem;
   margin-left: 16rem;
+}
+
+.containerQuestionBox{
+  display: flex;
+}
+.choicesBox{
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 95%;
+  font-size: 1rem;
+  height: 2rem;
+  position: relative;
+  top: 4rem;
+  left: .4rem;
+  align-items: center;
+
+}
+
+.hidden{
+  display: none;
+}
+
+#category{
+  font-size: 1rem;
+}
+
+#question{
+  font-size: 1rem;
 }

@@ -11,19 +11,30 @@
 </head>
 <body>
   <img src="media/1.jpeg" class="questionImg" alt="">
-  <div class="questionBox container" id="question-box">
-    <!-- <h4 id="category">Category:</h4>
-    <h4 id="question">Question:<span></span></h4>
+  <div class="containerQuestionBox">
+  <div class="questionBox" id="question-box">
+    <h4 >Category:<span id="category"></span></h4>
+    <h4>Question:<span id="question"></span></h4>
     <div class="choicesBox">
-      <p>A:<span></span></p>
-      <p>B:<span></span></p>
-      <p>C:<span></span></p>
-      <p>D:<span></span></p>
-    </div> -->
+      <p class="choice-prefix">A:</p>
+      <p class="choice-text" id="answerA"></p>
+    </div>
+    <div class="choicesBox">
+      <p class="choice-prefix">b:</p>
+      <p class="choice-text" id="answerB"></p>
+    </div>
+    <div class="choicesBox">
+      <p class="choice-prefix">C:</p>
+      <p class="choice-text" id="answerC"></p>
+    </div>
+    <div class="choicesBox">
+      <p class="choice-prefix">D:</p>
+      <p class="choice-text" id="answerD"></p>
+      </div>
+    </div>
   </div>
   <a href="AnswerPage.html" class="btn btn-primary btn-lg answerBtn" role="button" aria-pressed="true">Answer?</a>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="app.js"></script>
-  <script src="main.js"></script>
 </body>
 </html>
