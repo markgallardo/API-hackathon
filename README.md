@@ -28,3 +28,5 @@ git clone
 *[Open Trivia database](https://opentdb.com/api_config.php)
 
 *[rick and morty](https://rickandmortyapi.com/)
+
+3. You can start the project! you can checkout the application by loading the HTML file to your brower. Enjoy!
