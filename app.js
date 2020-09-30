@@ -52,7 +52,5 @@ function getData(){
       button.innerHTML = answers[i]
       questionBox.append(button)
     }
-
-    console.log(correctAnswer)
   }
 }
