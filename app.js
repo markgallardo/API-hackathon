@@ -3,12 +3,8 @@ var question = document.getElementById("question")
 var startGame = document.getElementById("startGame")
 var homePage = document.getElementById("homePage")
 var questionPage = document.getElementById("question-box")
-var answerA = document.getElementById("answerA")
-var answerB = document.getElementById("answerB")
-var answerC = document.getElementById("answerC")
-var answerD = document.getElementById("answerD")
 var questionBox = document.querySelector(".questionBox")
-
+var answerBox = document.querySelector(".answerBox")
 
 startGame.addEventListener('click', getData)
 
@@ -34,10 +30,6 @@ function getData(){
     category.innerHTML = data.results[0].category;
     question.innerHTML = data.results[0].question;
     console.log(data.results[0].category)
-    // answerA.innerText = "A: " + data.results[0].correct_answer;
-    // answerB.innerText = "B: " + data.results[0].incorrect_answers[0]
-    // answerC.innerText = "C: " + data.results[0].incorrect_answers[1]
-    // answerD.innerText = "D: " + data.results[0].incorrect_answers[2]
 
     // randomize the answer
     var answers = data.results[0].incorrect_answers;
@@ -46,11 +38,22 @@ function getData(){
     console.log(randomAnswer)
     //add the correct answer
     answers.splice(randomAnswer -1, 0 , correctAnswer)
+    console.log(correctAnswer)
     for( var i = 0; i < answers.length; i++){
       var button = document.createElement("button")
       button.classList.add('choicesBox')
       button.innerHTML = answers[i]
-      questionBox.append(button)
+      answerBox.append(button)
+    }
+    var answerBtn = document.querySelector("button")
+    answerBox.addEventListener("click", event)
+    function event(){
+      if(event.target == correctAnswer){
+        console.log("correct")
+      }else if (event.target = answers){
+        console.log(answers)
+        console.log("wrong")
+      }
     }
   }
 }
