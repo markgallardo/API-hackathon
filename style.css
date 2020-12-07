@@ -1,20 +1,20 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
   background-color: #00A6A6;
-  height: 100vh;
 }
+
 h1{
   margin-top: 5rem;
   text-align: center;
 }
-.homePageImg{
-  position: relative;
-  top: 3rem;
-  height: 22rem;
-}
+
 .btn{
-  margin-top: 7rem;
-  margin-left: 8rem;
-  border-radius: 20px;
+   border-radius: 20px;
   background: #EFCA08;
   color: black;
 }
@@ -22,17 +22,21 @@ h1{
 .questionBox{
   background-color:#F49F0A;
   position: relative;
-  top: .3rem;
+  /* top: .3rem;
   width: 95%;
   height: 24rem;
-  left: .6rem;
+  left: .6rem; */
 }
 
-.questionImg{
+/* .questionImg{
   height: 12rem;
   width: 12rem;
+} */
+img{
+   width: 100%;
+    height: auto;
+    border-radius: 50px;
 }
-
 .answerBtn{
   margin-top: 1rem;
   margin-left: 15rem;

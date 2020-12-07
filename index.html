@@ -9,28 +9,58 @@
   <title>QuizTime!</title>
 </head>
 <body>
-  <div class="container-fuild">
-    <div class="" id="homePage">
-      <h1>Quiz Time!</h1>
+  <!-- <div class="container">
+    <div class="row mt-0 align-content-center" id="homePage">
+      <div class="col-12">
+        <h1>Quiz Time</h1>
+      </div>
+      <div class="row">
+        <div class="col-6 offset-4">
+          <img src="/media/rick.png" alt="image of rick">
+        </div>
+        <div class="col-12 col-lg-6 col-md-3 offset-4  mt-3">
+          <button id="startGame" class="btn ">Start Game</button>
+        </div>
+      </div>
+    </div>
+    <div class="container hidden" id="question">
+      <div class="row">
+        <div class="col">
+          <img src="/media/1.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="container-fluid">
+    <div class="row" id="homePage">
+      <div></div>
+      <h1 class=>Quiz Time!</h1>
       <div class="text-center">
-        <img src="media/kissclipart-clip-art-clipart-rick-sanchez-morty-smith-art-4594aa523c82b4e9.png" class="rounded homePageImg" alt="rick and morty">
+        <img src="media/rick.png" class="" alt="rick and morty">
       </div>
         <button class="btn btn-lg" id="startGame">Start Game</button>
       </div>
       <div class="container hidden" id="question-box">
-        <img src="media/1.jpeg" class="questionImg" alt="">
+        <div class="row">
+        <div class="col-1 mb-2">
+        <img src="media/1.jpeg" class="col-12" alt="">
+        </div>
         <div class="containerQuestionBox">
           <div class="questionBox" >
             <h4>Category:<span id="category"></span></h4>
             <h4>Question:<span id="question"></span></h4>
             <div class="answerBox">
-
             </div>
             </div>
           </div>
         </div>
+       </div>
       </div>
    </div>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
   <script src="app.js"></script>
 </body>
