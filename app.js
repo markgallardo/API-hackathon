@@ -24,7 +24,7 @@ startGame.addEventListener('click', getData)
 
 
 function getData(){
-  homePage.classList.add("hidden")
+   homePage.classList.add("hidden")
   questionPage.classList.remove("hidden")
   $.ajax({
     method: "GET",
@@ -39,6 +39,7 @@ function getData(){
     });
     //render data
     function renderData(data){
+
       console.log(data)
       category.innerHTML = data.results[0].category;
       question.innerHTML = data.results[0].question;
@@ -66,14 +67,17 @@ function getData(){
         console.log(event.target.textContent)
         console.log(correctAnswer)
         if(event.target.innerHTML === correctAnswer){
-          correctCounter += 1
+          correctCounter ++
+
           getData()
-         console.log(correctCounter)
-          // choicesBox = event.target;
+        // choicesBox = event.target;
           console.log("correct")
           }else{
             console.log("wrong")
+            correctCounter = 0
           }
+        console.log(correctCounter)
+
         // if(choicesBox === correctAnswer){
         //   console.log("correct")
         // }else{
