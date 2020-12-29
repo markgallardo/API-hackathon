@@ -25,13 +25,12 @@ h1{
 }
 
 .homeImg{
-  height: 600px;
+  height: 500px;
+  width: auto;
 
 }
-img{
-  width: 100%;
-    height: auto;
-    border-radius: 50px;
+.questionImg{
+  height: 100px;
 }
 .answerBtn{
   margin-top: 1rem;
