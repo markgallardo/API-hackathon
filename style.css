@@ -21,7 +21,7 @@ h1{
 
 .questionBox{
   background-color:#F49F0A;
-  position: relative;
+
 }
 
 .homeImg{
@@ -47,7 +47,7 @@ h1{
 .answerBox{
   height: 14.2rem;
   width: 22.5rem;
-  background-color:#F49F0A;
+  background-color:#f49e0a00;
   margin-top: .5rem;
 
 }
@@ -82,4 +82,8 @@ h1{
 
 #question{
   font-size: 1rem;
+}
+
+.correctAnswer{
+  background-color: green;
 }
