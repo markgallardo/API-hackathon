@@ -37,14 +37,18 @@ function getData() {
 function reset() {
   answerBox.innerHTML = "";
   getData();
+
 }
 function handleClick(event) {
   console.log("event.target.textContent:", event.target.textContent)
   console.log("correctAnswer:", correctAnswer)
   if (event.target.innerHTML === correctAnswer) {
     correctCounter++
-    reset();
+    correctAnswerEffect()
+
+    console.log(questionBox)
     console.log("correct")
+
   } else {
     console.log("wrong")
     correctCounter = 0
@@ -76,3 +80,11 @@ function renderData(data) {
   //identify if the user choose the right or wrong answer
   answerBox.addEventListener("click", handleClick)
 }
+ //correct answer effect
+ function correctAnswerEffect(){
+  questionBox.style.backgroundColor = 'green'
+   setTimeout(function(){
+     questionBox.style.backgroundColor ='orange'
+     reset();
+    },800)
+ }
